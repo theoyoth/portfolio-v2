@@ -1,0 +1,7 @@
+.thumbnail {
+  border-radius: 12px;
+}
+
+.thumbHover:hover {
+  width:200px;
+}

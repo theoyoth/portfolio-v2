@@ -1,0 +1,8 @@
+.thumbnail {
+  border-radius: 12px;
+}
+
+.thumbHover:hover {
+  width:200px;
+  transition:all 2s ease-in-out;
+}

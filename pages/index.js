@@ -1,0 +1,85 @@
+import Layout from "../components/Layouts/LayoutAnimate";
+import {
+  Text,
+  Link,
+  Button,
+  Icon,
+  Heading,
+  List,
+  ListItem,
+  Container,
+  Box,
+} from "@chakra-ui/react";
+import { IoLogoInstagram, IoLogoGithub, IoLogoYoutube } from "react-icons/io5";
+
+export default function Home() {
+  return (
+    <Layout title="Home">
+      <Container maxW="550px">
+        <Text textAlign="center" fontSize="3xl" fontWeight="bold">
+          Theo Servis Bantang
+        </Text>
+        <Text textAlign="center" fontSize="md">
+          Frontend web developer
+        </Text>
+        <Heading as="h3" variant="section-title">
+          About Me
+        </Heading>
+        <Box>
+          My name is Theo, focus on make website in frontend side and little
+          backend
+        </Box>
+        <Heading as="h3" variant="section-title">
+          What I Like
+        </Heading>
+        <Box>
+          Art, Music, Playing Guitar,{" "}
+          <Link href="https://www.deviantart.com/yoth1" isExternal>
+            Edit Photos
+          </Link>
+        </Box>
+        <Heading as="h3" variant="section-title">
+          Find Me
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://www.instagram.com/theoyoth/" isExternal>
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                leftIcon={<Icon as={IoLogoInstagram} />}
+              >
+                theoyoth
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.youtube.com/channel/UCF3t40-awz3eOb9FqNhcesQ"
+              isExternal
+            >
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                leftIcon={<Icon as={IoLogoYoutube} />}
+              >
+                Theoyoth
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/theoyoth" isExternal>
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                theoyoth
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+      </Container>
+    </Layout>
+  );
+}
