@@ -22,14 +22,14 @@ export default function Home() {
         <Text textAlign="center" fontSize="md">
           Frontend web developer
         </Text>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" size="2xl" variant="section-title">
           About Me
         </Heading>
-        <Box>
+        <Text>
           My name is Theo, focus on make website in frontend side and little
           backend
-        </Box>
-        <Heading as="h3" variant="section-title">
+        </Text>
+        <Heading size="2xl" variant="section-title">
           What I Like
         </Heading>
         <Box>
@@ -38,7 +38,7 @@ export default function Home() {
             Edit Photos
           </Link>
         </Box>
-        <Heading as="h3" variant="section-title">
+        <Heading size="2xl" variant="section-title">
           Find Me
         </Heading>
         <List>
@@ -50,6 +50,20 @@ export default function Home() {
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
                 theoyoth
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.youtube.com/channel/UCd1DGoZCWy1xPX1K7WvVvFg"
+              isExternal
+            >
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                leftIcon={<Icon as={IoLogoYoutube} />}
+              >
+                CodeByTheo
               </Button>
             </Link>
           </ListItem>
