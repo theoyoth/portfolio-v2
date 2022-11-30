@@ -1,6 +1,14 @@
-import { Box, SimpleGrid, Text, Heading, Container } from "@chakra-ui/react";
+import {
+  Box,
+  SimpleGrid,
+  Text,
+  Heading,
+  Container,
+  Flex,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
+import { IoFolderOpen } from "react-icons/io5";
 import Layout from "../components/Layouts/LayoutAnimate";
 import travelThumb from "../public/image/projects/travel.png";
 import movieThumb from "../public/image/projects/movieapp.png";
@@ -13,9 +21,12 @@ export default function Projects() {
   return (
     <Layout title="Projects">
       <Container maxW="550px">
-        <Heading as="h3" fontSize={20} mb={4}>
-          Projects
-        </Heading>
+        <Flex alignItems="center" mb={4}>
+          <Heading as="h3" fontSize={20} mr={2}>
+            Projects
+          </Heading>
+          <IoFolderOpen />
+        </Flex>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Box>
             <Image
