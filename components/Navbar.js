@@ -4,11 +4,11 @@ import {
   Container,
   Flex,
   useColorModeValue,
-  Heading,
   Stack,
   Link,
 } from "@chakra-ui/react";
 import Logo from "./Logo";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const LinkItem = ({ path, href, _target, children, ...props }) => {
   const active = path === href;
@@ -17,7 +17,7 @@ const LinkItem = ({ path, href, _target, children, ...props }) => {
     <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? "#4299E1" : undefined}
+        bg={active ? "#5D8BF4" : undefined}
         color={active ? "#202034" : "inactivecolor"}
         borderRadius="base"
         _target={_target}
@@ -35,29 +35,31 @@ const Navbar = ({ path }) => {
       as="nav"
       position="fixed"
       w="100%"
-      bg={useColorModeValue("#ffffff40", "#20202380")}
+      bg={useColorModeValue("#f1f1f2", "#20202380")}
       css={{ backdropFilter: "blur(10px)" }}
       zIndex={1}
     >
       <Container
         maxW="container.md"
         display="flex"
-        align="center"
-        wrap="wrap"
-        justify="space-between"
+        alignItems="center"
+        justifyContent="space-between"
         p={2}
       >
-        <Flex align="center" mr={5}>
-          <Logo />
+        <Flex>
+          <Flex align="center" mr={5}>
+            <Logo />
+          </Flex>
+          <Stack direction="row" spacing="5">
+            <LinkItem href="/posts" path={path}>
+              Videos
+            </LinkItem>
+            <LinkItem href="/projects" path={path}>
+              Projects
+            </LinkItem>
+          </Stack>
         </Flex>
-        <Stack direction="row" spacing="5">
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
-          <LinkItem href="/projects" path={path}>
-            Projects
-          </LinkItem>
-        </Stack>
+        <ThemeToggleButton />
       </Container>
     </Box>
   );
