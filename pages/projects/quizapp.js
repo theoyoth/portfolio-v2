@@ -13,8 +13,11 @@ export default function Quizapp() {
     <Layout title="Quiz App">
       <Container>
         <WorkImage src="/image/projects/quizyoth2.png" alt="quiz app image 1" />
-        <WorkImage src="/image/projects/quizyoth3.png" alt="quiz app image 2" />
-        <Flex justifyContent="space-between">
+        <Flex
+          justifyContent={{ base: "center", sm: "space-between" }}
+          alignItems={{ base: "center", sm: "none" }}
+          flexDirection={{ base: "column", md: "row" }}
+        >
           <WorkImageMobile
             src="/image/projects/quizyoth-mobile1.png"
             alt="quiz app image 3"
