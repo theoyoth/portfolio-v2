@@ -24,4 +24,9 @@ export const ProjectDetail = [
     title: "Quiz app",
     href: "projects/quizapp",
   },
+  {
+    src: "./image/projects/clothing1.png",
+    title: "Clothing website",
+    href: "projects/clothing",
+  },
 ];

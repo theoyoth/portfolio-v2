@@ -3,7 +3,7 @@ import Layout from "../../components/Layouts/LayoutAnimate";
 import { Title, WorkImage, Meta } from "../../components/Projects";
 import Paragraph from "../../components/Paragraph";
 
-function serverManager() {
+export default function serverManager() {
   return (
     <Layout title="Manage server">
       <Container>
@@ -33,5 +33,3 @@ function serverManager() {
     </Layout>
   );
 }
-
-export default serverManager;
