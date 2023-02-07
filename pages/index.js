@@ -8,9 +8,11 @@ import {
   List,
   ListItem,
   Container,
-  Box,
+  Box,Flex
 } from "@chakra-ui/react";
 import { IoLogoInstagram, IoLogoGithub, IoLogoYoutube } from "react-icons/io5";
+
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,6 +24,9 @@ export default function Home() {
         <Text textAlign="center" fontSize="md">
           Frontend web developer
         </Text>
+        <Flex alignItems="center" justifyContent="center" marginTop="10px">
+          <Image src="/image/avatar.jpg" width={120} height={118} style={{borderRadius:"50%"}} />
+        </Flex>
         <Heading as="h3" size="2xl" variant="section-title">
           About Me
         </Heading>
