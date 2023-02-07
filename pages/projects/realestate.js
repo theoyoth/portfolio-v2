@@ -10,6 +10,7 @@ import {
   Meta,
 } from "../../components/Projects";
 import Paragraph from "../../components/Paragraph";
+import LinkGithub from "../../components/LinkGithub";
 
 export default function Realestate() {
   return (
@@ -35,6 +36,7 @@ export default function Realestate() {
             <span>Next JS</span>
           </ListItem>
         </List>
+        <LinkGithub href="https://github.com/theoyoth/real-estate"/>
       </Container>
     </Layout>
   );

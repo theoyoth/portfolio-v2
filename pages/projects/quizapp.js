@@ -1,5 +1,6 @@
 import { Container, List, ListItem, Flex } from "@chakra-ui/react";
 import Layout from "../../components/Layouts/LayoutAnimate";
+import LinkGithub from "../../components/LinkGithub";
 import Paragraph from "../../components/Paragraph";
 import {
   Title,
@@ -38,6 +39,7 @@ export default function Quizapp() {
             <span>Nuxt JS</span>
           </ListItem>
         </List>
+        <LinkGithub href="https://github.com/theoyoth/quiz-game"/>
       </Container>
     </Layout>
   );

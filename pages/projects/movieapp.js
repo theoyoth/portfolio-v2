@@ -1,5 +1,6 @@
 import { Container, List, ListItem } from "@chakra-ui/react";
 import Layout from "../../components/Layouts/LayoutAnimate";
+import LinkGithub from "../../components/LinkGithub";
 import Paragraph from "../../components/Paragraph";
 import { Title, WorkImage, Meta } from "../../components/Projects";
 
@@ -27,6 +28,7 @@ export default function Movieapp() {
             <span>Nuxt JS</span>
           </ListItem>
         </List>
+        <LinkGithub href="https://github.com/theoyoth/movie-search-app"/>
       </Container>
     </Layout>
   );
