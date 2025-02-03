@@ -29,4 +29,9 @@ export const ProjectDetail = [
     title: "Clothing website",
     href: "projects/clothing",
   },
+  {
+    src: "./image/projects/book-library2.png",
+    title: "book library website",
+    href: "projects/booklibrary",
+  },
 ];

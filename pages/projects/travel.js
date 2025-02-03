@@ -2,6 +2,7 @@ import { Container, List, ListItem } from "@chakra-ui/react";
 import Layout from "../../components/Layouts/LayoutAnimate";
 import { Title, WorkImage, Meta } from "../../components/Projects";
 import Paragraph from "../../components/Paragraph";
+import LinkGithub from "../../components/LinkGithub";
 
 export default function Travel() {
   return (
@@ -19,6 +20,7 @@ export default function Travel() {
             <span>HTML, SCSS, JS</span>
           </ListItem>
         </List>
+        <LinkGithub href="https://github.com/theoyoth/travel-website"/>
       </Container>
     </Layout>
   );

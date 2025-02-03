@@ -8,9 +8,11 @@ import {
   List,
   ListItem,
   Container,
-  Box,
+  Box,Flex
 } from "@chakra-ui/react";
 import { IoLogoInstagram, IoLogoGithub, IoLogoYoutube } from "react-icons/io5";
+
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,12 +24,14 @@ export default function Home() {
         <Text textAlign="center" fontSize="md">
           Frontend web developer
         </Text>
+        <Flex alignItems="center" justifyContent="center" marginTop="10px">
+          <Image src="/image/avatar.jpg" width={120} height={118} style={{borderRadius:"50%"}} />
+        </Flex>
         <Heading as="h3" size="2xl" variant="section-title">
           About Me
         </Heading>
         <Text>
-          My name is Theo, focus on make website in frontend side and little
-          backend
+          My name is Theo, focus on make website in frontend side and little backend
         </Text>
         <Heading size="2xl" variant="section-title">
           What I Like
@@ -42,6 +46,17 @@ export default function Home() {
           Find Me
         </Heading>
         <List>
+          <ListItem>
+            <Link href="https://github.com/theoyoth" isExternal>
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                theoyoth
+              </Button>
+            </Link>
+          </ListItem>
           <ListItem>
             <Link href="https://www.instagram.com/theoyoth/" isExternal>
               <Button
@@ -78,17 +93,6 @@ export default function Home() {
                 leftIcon={<Icon as={IoLogoYoutube} />}
               >
                 Theoyoth
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://github.com/theoyoth" isExternal>
-              <Button
-                variant="ghost"
-                colorScheme="blue"
-                leftIcon={<Icon as={IoLogoGithub} />}
-              >
-                theoyoth
               </Button>
             </Link>
           </ListItem>

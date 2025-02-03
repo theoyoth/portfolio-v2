@@ -50,7 +50,7 @@ export const ProjectWrapper = ({ src, title = "", href = "" }) => (
     <Image src={src} alt={title} className={styles.thumbnail} />
     <NextLink href={href} target="_blank">
       <a>
-        <Text mt={2}>{title}</Text>
+        <Text mt={2} fontWeight='semibold'>{title}</Text>
       </a>
     </NextLink>
   </Box>
